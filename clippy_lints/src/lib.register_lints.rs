@@ -137,6 +137,7 @@ store.register_lints(&[
     empty_drop::EMPTY_DROP,
     empty_enum::EMPTY_ENUM,
     empty_structs_with_brackets::EMPTY_STRUCTS_WITH_BRACKETS,
+    empty_vec_call::EMPTY_VEC_CALL,
     entry::MAP_ENTRY,
     enum_clike::ENUM_CLIKE_UNPORTABLE_VARIANT,
     enum_variants::ENUM_VARIANT_NAMES,

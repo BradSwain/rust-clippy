@@ -1,0 +1,16 @@
+error: result of `side_effect()` is unused in empty array
+  --> $DIR/empty_vec_call.rs:9:14
+   |
+LL |     let _a = [side_effect(); 0];
+   |              ^^^^^^^^^^^^^^^^^^ help: consider using: `[] as [usize; 0]`
+   |
+   = note: `-D clippy::empty-vec-call` implied by `-D warnings`
+
+error: result of `side_effect()` is unused in empty vec
+  --> $DIR/empty_vec_call.rs:10:14
+   |
+LL |     let _v = vec![side_effect(); 0];
+   |              ^^^^^^^^^^^^^^^^^^^^^^ help: consider using: `vec![]`
+
+error: aborting due to 2 previous errors
+
